@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Arrays and objects</title>  	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  	<script src="script.js"></script>
+  	<link rel="icon" type="image/png" href="">
+  	<style>
+		html, body {
+			height: 100%;
+			outline: 0 none;
+		}
+	</style>
+</head>
+
+<body class="w3-row" style="background-color:gainsboro;" onload="">
+
+	<div id="togglePanel" class="w3-container w3-padding" style="height:12%;">	
+	
+		<div class="w3-container w3-half" style="height:100%;">
+			<textarea style="width:100%;height:100%;resize:none;padding:1%;" autofocus id="ta">
+			
+			</textarea>
+		</div>
+		
+		<div class="w3-container w3-half" style="height:100%;">
+		
+			<div class="w3-container w3-third" style="height:100%;">
+				<input type="button" value="Array" onclick="recupArray()" class="w3-btn w3-dark-grey w3-left w3-small" style="width:48%;font-weight:900;margin-bottom:2%;">
+				<input type="button" value="Object" onclick="createObject()" class="w3-btn w3-dark-grey w3-right w3-small" style="width:48%;font-weight:900;margin-bottom:2%;">
+				
+				<input type="button" value="-" onclick="" class="w3-btn w3-dark-grey w3-left w3-small" style="width:48%;font-weight:900;">
+				<input type="button" value="-" onclick="" class="w3-btn w3-dark-grey w3-right w3-small" w3-small style="width:48%;font-weight:900;">
+			</div>
+			
+			<div class="w3-container w3-third" style="height:100%;">
+				<input type="button" value="To table" onclick="arrayHtml()" class="w3-btn w3-dark-grey w3-half w3-left w3-small" style="width:48%;font-weight:900;">
+
+			</div>
+			
+			<div class="w3-container w3-third" style="height:100%;">
+				<input type="button" value="Result" onclick="clearResult()" class="w3-btn w3-dark-grey w3-half w3-left w3-small" style="width:48%;font-weight:900;">
+
+				<input type="button" value="All" onclick="clearAll()" class="w3-btn w3-dark-grey w3-half w3-right w3-small" style="width:48%;font-weight:900;">	
+			</div>
+			
+		</div>
+	
+	</div>
+	
+	<div class="w3-container w3-padding" style="width:100%;min-height:75%;" id="divTable">
+		
+		<p id="toggle" onclick="toggleShow()" class="w3-padding">Masquer<p>
+		
+		<div class="w3-container w3-padding" style="width:100%;height:100%;" id="generatedTable">
+		
+			
+		
+		</div>
+		
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
